@@ -224,15 +224,18 @@ footer {
 
 @media (max-width: 600px) {
   .branding-container {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
   }
 
   .branding-title {
     font-size: 2rem;
   }
-
+  .logo {
+    max-height:50px;
+  }
+}
   nav {
     flex-direction: column;
     align-items: flex-start;
