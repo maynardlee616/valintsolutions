@@ -66,6 +66,7 @@ nav ul li a:focus {
   max-width: 200px;
   width: auto;
   height: auto;
+  vertical-align:middle;
 }
 
 .branding-title {
@@ -73,6 +74,8 @@ nav ul li a:focus {
   font-weight: 800;
   color: #0a192f;
   margin: 0;
+  position: relative;
+  top: 2px;
 }
 
 .govcon-hero {
