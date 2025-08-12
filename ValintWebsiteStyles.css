@@ -68,7 +68,7 @@ nav ul li a:focus {
   height: auto;
   display: block;
   position: relative;
-  top: -2px;
+  top: -10px;
 }
 
 .branding-title {
@@ -228,17 +228,29 @@ footer {
 
 @media (max-width: 600px) {
   .branding-container {
+    display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     text-align: left;
-    gap: 0rem
+    gap: 0rem;
   }
-
+  .branding-header {
+    padding: 1rem 1rem 0.5rem 1rem;
+  }
   .branding-title {
     font-size: 2rem;
     margin: 0;
+    position: relative;
+    top: 0;
   }
-
+  .logo {
+    max-height: 50px; /* Optional: scale logo for mobile */
+    height: auto;
+    width: auto;
+    position: relative;
+    top: 0; /* Ensures logo aligns with title */
+  }
   nav {
     flex-direction: column;
     align-items: flex-start;
