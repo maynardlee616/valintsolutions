@@ -75,7 +75,7 @@ nav ul li a:focus {
   color: #0a192f;
   margin: 0;
   position: relative;
-  top: 10px;
+  top: -15px;
 }
 
 .govcon-hero {
