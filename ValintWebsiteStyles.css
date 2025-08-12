@@ -66,6 +66,9 @@ nav ul li a:focus {
   max-width: 200px;
   width: auto;
   height: auto;
+  display: block;
+  position: relative;
+  top: -2px;
 }
 
 .branding-title {
@@ -228,12 +231,12 @@ footer {
     flex-direction: row;
     align-items: center;
     text-align: left;
+    gap: 0rem
   }
 
   .branding-title {
     font-size: 2rem;
-    position: relative;
-    top: 0;
+    margin: 0;
   }
 
   nav {
