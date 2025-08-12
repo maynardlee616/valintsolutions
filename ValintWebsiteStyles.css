@@ -58,7 +58,7 @@ nav ul li a:focus {
 .branding-container {
   display: flex;
   align-items: center;
-  gap: 0.2rem;
+  gap: 0;
 }
 
 .logo {
@@ -224,18 +224,15 @@ footer {
 
 @media (max-width: 600px) {
   .branding-container {
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .branding-title {
     font-size: 2rem;
   }
-  .logo {
-    max-height:50px;
-  }
-}
+
   nav {
     flex-direction: column;
     align-items: flex-start;
