@@ -249,7 +249,7 @@ footer {
     height: auto;
     width: auto;
     position: relative;
-    top: -15rem; /* Ensures logo aligns with title */
+    top: -10rem; /* Ensures logo aligns with title */
   }
   nav {
     flex-direction: column;
