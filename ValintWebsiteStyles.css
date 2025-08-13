@@ -57,18 +57,18 @@ nav ul li a:focus {
 
 .branding-container {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  align-items: baseline;
+  gap: 0;
 }
 
 .logo {
-  max-height: 70px;
+  max-height: 50px;
   max-width: 200px;
   width: auto;
   height: auto;
   display: block;
   position: relative;
-  top: -3px;
+  top: -2px;
 }
 
 .branding-title {
@@ -228,15 +228,17 @@ footer {
 
 @media (max-width: 600px) {
   .branding-container {
-    gap: 0.4rem;
+    gap: 0rem;
   }
   .branding-header {
     padding: 1rem 1rem 0.5rem 1rem;
   }
   .branding-title {
     font-size: 2rem;
+    margin: 0;
   }
   .logo {
+    position: static;
     max-height: 50px; /* Optional: scale logo for mobile */
     top: -2px;
   }
