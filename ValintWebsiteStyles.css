@@ -49,6 +49,12 @@ nav ul li a:focus {
   color: #64ffda;
 }
 
+nav ul li a.highlight-yellow-bold:hover,
+nav ul li a.highlight-yellow-bold:focus {
+  background-color: #ffd700; /* Keep yellow on hover */
+  color: #0a192f; /* Optional: slightly darker for hover contrast */
+}
+
 .branding-header {
   background: #ffffff;
   padding: 1rem 2rem 0.5rem 2rem;
@@ -218,6 +224,11 @@ footer {
 .fade-in {
   opacity: 0;
   transition: opacity 0.5s, ease-in;
+}
+
+.highlight-yellow-bold {
+  background-color: #ffd700;
+  font-weight: bold;
 }
 
 .fade-in.visible {

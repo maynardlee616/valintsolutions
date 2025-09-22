@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting Packages | Valint Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for contact icons, if needed later -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="branding-header">
+        <div class="branding-container">
+            <img src="ValintLogoHead1.png" alt="Valint Solutions Logo" class="logo">
+            <h1 class="branding-title">Valint Solutions</h1>
+        </div>
+    </header>
+
+    <section class="govcon-hero" id="home">
+        <div class="hero-content fade-in">
+            <h1>Consulting Packages</h1>
+            <p class="tagline">Strategic Offerings for Federal Success</p>
+            <p>Explore our tailored packages for federal contractors, SDVOBs, and small businesses navigating compliance and growth.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="about general-info fade-in">
+            <h2>Our Commitment</h2>
+            <p><strong>Minimum contract length:</strong> 3 months.</p>
+            <p><strong>Most recent win:</strong> WEXMAC TITUS 2.1 MAC.</p>
+            <p><strong>Rates and terms:</strong> Subject to final agreement; customized based on needs.</p>
+            <p><strong>Discount:</strong> 10% discount for 1-year agreements.</p>
+        </section>
+
+        <section class="about considerations fade-in">
+            <h2>Things to Consider</h2>
+            <ul>
+                <li>What is your number one priority for government contracting this fiscal year?</li>
+                <li>What is the cost of not solving this problem or failing to secure this contract?</li>
+                <li>What would a successful outcome look like for your business in measurable terms?</li>
+                <li>What would a 10% or 20% ROI on our fees mean for your bottom line?</li>
+            </ul>
+        </section>
+
+        <section class="package-section fade-in">
+            <h2>1. Discovery Package</h2>
+            <p><strong>Ideal for:</strong></p>
+            <ul>
+                <li>New entrants to government contracting seeking strategic positioning and compliance from the start. This package helps avoid costly errors and regulatory penalties by ensuring proposals are 100% compliant. It also supports businesses with expert guidance on high-priority tasks.</li>
+            </ul>
+            <p><strong>Services included:</strong></p>
+            <ul>
+                <li>10 hours/month.</li>
+                <li>Response time: 1 business day (email/phone/text).</li>
+                <li>1 monthly strategy call.</li>
+                <li>High-level feedback on structure and key sections of any proposals or informational responses (up to 10 pages/month).</li>
+                <li>Contract readiness assessment: high-level feedback on FAR/DFARS compliance.</li>
+            </ul>
+            <p><strong>Mission contribution:</strong></p>
+            <p>Ensures your first steps in government contracting are compliant and strategic, reducing risk of disqualification and wasted resources. Improve success rate by 15 – 30% through stronger compliance and proposal strategy.</p>
+            
+        </section>
+
+        <section class="package-section fade-in">
+            <h2>2. Strategic Partner Package</h2>
+            <p><strong>Ideal for:</strong></p>
+            <ul>
+                <li>Businesses with some contracting experience who need hands-on strategy, compliance support, and capture planning to compete more effectively. This deeper engagement supports growth strategy execution and robust pipeline management.</li>
+            </ul>
+            <p><strong>Services included:</strong></p>
+            <ul>
+                <li>20 hours/month.</li>
+                <li>Response time: 2 hours (email/phone/text).</li>
+                <li>2 monthly strategy calls.</li>
+                <li>Identifying and prioritizing high-potential contract opportunities.</li>
+                <li>In-depth proposal or informational response review.</li>
+                <li>In-depth proposal regulation (FAR/DFARS) compliance.</li>
+                <li>Management recommendations of existing contracts.</li>
+                <li>Proactive identification and resolution of immediate contract issues.</li>
+            </ul>
+            <p><strong>Mission contribution:</strong></p>
+            <p>Strengthens your capture and proposal process, improves compliance, and enhances contract performance leading to higher win rates and long-term contracting success.</p>
+            <p><strong>Monthly fees:</strong></p>
+           
+        </section>
+
+        <section class="package-section fade-in">
+            <h2>3. Executive Package</h2>
+            <p><strong>Ideal for:</strong></p>
+            <ul>
+                <li>Established contractors seeking a high-level strategic partner to scale operations, increase contract wins, and strengthen internal compliance and proposal execution. This package offers full business development cycle support and executive-level oversight.</li>
+            </ul>
+            <p><strong>Services included:</strong></p>
+            <ul>
+                <li>1 day of on-site availability per week (travel and lodging billed separately).</li>
+                <li>Full-cycle Business Development (2 – 3 major proposals): end-to-end support, opportunity identification, teaming strategy.</li>
+                <li>Full proposal writing/coordination (80 hours per proposal).</li>
+                <li>Project management oversight: strategic oversight and guidance for key government projects, including risk management and performance metrics analysis.</li>
+                <li>Customized internal training workshops: for the client’s internal team on topics such as FAR compliance, effective proposal writing, or contract negotiations.</li>
+            </ul>
+            <p><strong>Mission contribution:</strong></p>
+            <p>Provides executive-level oversight and hands-on leadership to drive growth, strengthen compliance, and ensure long-term success in the federal marketplace.</p>
+            <p><strong>Monthly fees:</strong></p>
+          
+        </section>
+
+        <section class="contact general-info fade-in">
+            <p>We want to help your company grow and thrive. <a href="#contact" class="contact-link">Schedule a call with us today</a>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Valint Solutions, LLC | Built with veteran pride</p>
+    </footer>
+
+    <script>
+        // Fade-in effect for elements with .fade-in class
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeIns = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            fadeIns.forEach(element => observer.observe(element));
+        });
+    </script>
+</body>
+</html>
