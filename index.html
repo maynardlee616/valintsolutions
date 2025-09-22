@@ -21,14 +21,15 @@
   <meta property="og:url" content="https://www.valintsolutions.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Valint Solutions" />
-  <meta property="article:published_time" content="2025-08-17T12:00:00+00:00" />
-  <meta property="article:modified_time" content="2025-08-17T12:00:00+00:00" />
+  <meta property="article:published_time" content="2025-09-21T12:00:00+00:00" />
+  <meta property="article:modified_time" content="2025-09-21T12:00:00+00:00" />
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Valint Solutions | Government Contractor Consulting" />
   <meta name="twitter:description" content="Valint Solutions is a veteran-owned consulting firm helping businesses succeed in the federal marketplace. We guide companies through FAR, DFARS, CAS, cybersecurity, and business systems compliance to win and perform on government contracts." />
   <meta name="twitter:image" content="https://www.valintsolutions.com/ValintLogoHead1.png" />
   <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.valintsolutions.com/" />
   <script type="application/ld+json">
  {
   "@context": "https://schema.org",
@@ -44,10 +45,11 @@
     "image": "https://www.valintsolutions.com/Me.JPG"
  },
  "areaServed": "United States"
+}
 </script>
 </head>
 <body>
-  <nav>
+  <nav aria-label="Main navigation">
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About Me</a></li>
@@ -86,28 +88,46 @@
       <li><a href="mailto:contact@valintsolutions.com" class="contact-link email"><i class="fas fa-envelope"></i> Email</a></li>
       <li><a href="https://www.linkedin.com/in/maynardlee" target="_blank" class="contact-link linkedin" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
       <li><a href="https://x.com/maynardlee1" target="_blank" class="contact-link x" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i> X</a></li>
-    </ul>
-  </section>
+  <section class="services fade-in">
+  <h2>Government Contracting Services</h2>
+  <p>Our veteran-owned consulting firm provides comprehensive support to ensure your success in the federal marketplace.</p>
+  <ul>
+    <li><strong>FAR Compliance Consulting:</strong> Guidance on Federal Acquisition Regulations for small businesses and HUBZone firms.</li>
+    <li><strong>DFARS and Cybersecurity:</strong> Assessments and strategies to meet defense supplement requirements and NIST standards.</li>
+    <li><strong>CAS Implementation:</strong> Expert help with Cost Accounting Standards for contract performance.</li>
+    <li><strong>Certification Assistance:</strong> For SDVOB, VOSB, WOSB, and 8(a) programs.</li>
+  </ul>
+</section>
   <footer>
     <p>&copy; 2025 Valint Solutions, LLC | Designed with veteran pride</p>
   </footer>
   <script>
-    function onScrollFadeIn() {
-      document.querySelectorAll('.fade-in').forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if(rect.top < window.innerHeight - 50) {
-          el.classList.add('visible');
+        // Intersection Observer for fade-in effect
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Unobserve after fading in to optimize performance
+          observer.unobserve(entry.target);
         }
       });
-    }
-    window.addEventListener('scroll', onScrollFadeIn);
-    window.addEventListener('DOMContentLoaded', onScrollFadeIn);
+    }, {
+      root: null, // Use viewport
+      rootMargin: '0px',
+      threshold: 0.1 // Trigger when 10% of element is visible
+    });
 
+    // Observe all elements with .fade-in class
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Smooth scrolling for nav links
     document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        if(target) {
+        if (target) {
           window.scrollTo({ top: target.offsetTop - 60, behavior: 'smooth' });
         }
       });
