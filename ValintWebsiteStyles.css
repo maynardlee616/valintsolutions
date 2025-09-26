@@ -236,7 +236,7 @@ footer {
   opacity: 1;
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .branding-container {
     gap: 0rem;
   }
@@ -249,7 +249,7 @@ footer {
   }
   .logo {
     position: static;
-    max-height: 50px; /* Optional: scale logo for mobile */
+    max-height: 50px;
     top: -2px;
   }
   nav {
@@ -257,18 +257,36 @@ footer {
     align-items: flex-start;
     padding: 1rem;
   }
-
+  nav ul {
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-start; /* Align links to the left */
+    width: 100%; /* Ensure full width for proper spacing */
+    gap: 0.8rem; /* Reduce gap for mobile */
+  }
+  nav ul li {
+    width: 100%; /* Each link takes full width */
+  }
+  nav ul li a {
+    display: block; /* Make links full-width clickable areas */
+    padding: 10px 12px; /* Adjust padding for mobile */
+    font-size: 1rem; /* Slightly smaller font for mobile */
+    text-align: left; /* Align text to the left */
+    border-radius: 8px; /* Soften border radius for mobile */
+  }
+  nav ul li a:hover,
+  nav ul li a:focus {
+    background: #233554;
+    color: #64ffda;
+  }
   .about h2,
   .contact h2 {
     font-size: 1.3rem;
   }
-
   .hero-content {
     padding: 1rem;
     font-size: 0.95rem;
     line-height: 1.6;
   }
-
   .hero-content h1,
   .hero-content h2 {
     font-size: 1.3rem;
