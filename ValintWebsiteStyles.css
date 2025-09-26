@@ -136,6 +136,9 @@ nav ul li a.highlight-yellow-bold:focus {
   padding: 1.5rem 2rem;
   border-radius: 12px;
   text-align: center;
+  background: #fff;
+  color: #001f3f;
+  overflow: hidden; /* Ensure no overflow issues */
 }
 
 .about {
@@ -153,7 +156,10 @@ nav ul li a.highlight-yellow-bold:focus {
   width: 100%;
   max-width: 300px
   height: auto;
-  object-fit: cover;
+  object-fit: contain; /* Changed from cover to contain to prevent cropping */
+  display: block; /* Ensure proper block-level rendering */
+  margin: 0 auto; /* Center the image horizontally */
+  max-height: 300px; /* Optional: Limit height to prevent oversized images on desktop */
 }
 
 .contact {
